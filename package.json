@@ -1,0 +1,33 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "nuxi preview",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.2",
+    "core-js": "^3.19.3",
+    "moment": "^2.29.4",
+    "nuxt-edge": "latest",
+    "pinia": "^2.0.22",
+    "std-env": "^3.2.1",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge@^3.0.0-27737014.fcf636d",
+    "@nuxtjs/eslint-config": "^11.0.0",
+    "@nuxtjs/moment": "^1.6.1",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "eslint": "^8.23.1",
+    "nuxi": "^3.0.0-rc.11",
+    "nuxt": "rc",
+    "postcss": "^8.4.4"
+  }
+}
