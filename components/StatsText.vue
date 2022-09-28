@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-base font-normal text-gray-500 leading-5">
-      {{ tasks.length }} Task{{tasks.length !== 1 ? 's' : '' }} ({{ completed.length }} completed)
+      {{ tasks.length }} Task{{tasks.length !== 1 ? 's' : '' }} ({{ tasks.filter(element=>element.completed !== false).length }} completed)
     </div>
   </div>
 </template>

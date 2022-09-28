@@ -60,7 +60,8 @@ export default {
   },
   methods: {
     addtask (newtask) {
-      const task = { ...newtask, completed: false, date: Date.now() }
+      const datenew = Date.now()
+      const task = { ...newtask, completed: false, date: datenew }
       if (!localStorage.getItem('tasks')) {
         this.tasks.unshift(task)
         localStorage.setItem('tasks', JSON.stringify(this.tasks))
