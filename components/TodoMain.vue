@@ -67,7 +67,7 @@ export default {
   },
   watch: {
     // whenever value changes, this function will run
-    search (newValue, oldvalue) {
+    search (newValue, oldValue) {
       this.updateSearch(newValue)
     }
   },

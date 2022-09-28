@@ -45,7 +45,7 @@
           <span class="sr-only">completed</span>
         </button>
         <div class="w-fit flex items-center space-x-2 text-gray-400">
-          <NuxtLink :to="`/edit/${item.title}`" class="hover:text-blue-500">
+          <NuxtLink :to="`/edit/${item.date}`" class="hover:text-blue-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

@@ -54,15 +54,15 @@ export default {
   components: { PageHeading },
   data () {
     return {
-      task: {},
-      tasks: []
+      task: {}
     }
   },
   methods: {
     addtask (newtask) {
+      const tasks = JSON.parse(localStorage.getItem('tasks'))
       const datenew = Date.now()
       const task = { ...newtask, completed: false, date: datenew }
-      if (!localStorage.getItem('tasks')) {
+      if (!tasks) {
         this.tasks.unshift(task)
         localStorage.setItem('tasks', JSON.stringify(this.tasks))
         this.$router.push('/')
